@@ -10,14 +10,14 @@ console.log("--- E-Commerce Design Patterns Simulation ---");
 console.log("===========================================\n");
 
 // --- Part 2A: Singleton Pattern ---
-// console.log("--- 2A: Singleton Pattern ---");
-// const cart1 = new CartService();
-// const cart2 = new CartService();
-// cart1.addProduct({ id: 1, name: 'Laptop', price: 1200 });
-// console.log("Cart 1 contents:", cart1.getProducts());
-// console.log("Cart 2 contents:", cart2.getProducts());
-// console.log("Are cart1 and cart2 the same instance?", cart1 === cart2);
-// console.log("\n");
+console.log("--- 2A: Singleton Pattern ---");
+const cart1 = new CartService();
+const cart2 = new CartService();
+cart1.addProduct({ id: 1, name: 'Laptop', price: 1200 });
+console.log("Cart 1 contents:", cart1.getProducts());
+console.log("Cart 2 contents:", cart2.getProducts());
+console.log("Are cart1 and cart2 the same instance?", cart1 === cart2);
+console.log("\n");
 
 
 // --- Part 2B: Factory Pattern ---
@@ -45,9 +45,9 @@ console.log("===========================================\n");
 // --- Part 3B: Facade Pattern ---
 // console.log("--- 3B: Facade Pattern ---");
 // const checkout = new CheckoutFacade();
-// const orderDetails = { 
-//     userId: 'user-123', 
-//     productIds: [1, 3], 
+// const orderDetails = {
+//     userId: 'user-123',
+//     productIds: [1, 3],
 //     shippingInfo: '123 Main St',
 //     amount: 200
 // };
